@@ -1,0 +1,10 @@
+{
+    "name": "withfatpanda/theme-name",
+    "type": "wordpress-theme",
+    "version": "1.0.0",
+    "license": "GPL-2.0",
+    "private": true,
+    "require": {
+
+    }
+}
