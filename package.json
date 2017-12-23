@@ -4,7 +4,10 @@
   "description": "Wordpress Theme framework",
   "main": "index.js",
   "scripts": {
-    "postinstall": "gulp copy-assets"
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "engines": {
     "npm": ">=2.1.8"
@@ -52,5 +55,8 @@
     "popper.js": "^1.11.1",
     "run-sequence": "^2.0.0",
     "undescores-for-npm": "^1.0.0"
+  },
+  "devDependencies": {
+    "laravel-mix": "^1.7.2"
   }
 }

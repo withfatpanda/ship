@@ -1,4 +1,6 @@
 .DS_Store
 node_modules
-composer.lock
 npm.log
+yarn-error.log
+dist/
+dist-product/
