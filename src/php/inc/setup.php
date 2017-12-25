@@ -5,14 +5,14 @@
  * @package understrap
  */
 
-require get_template_directory() . '/inc/theme-settings.php';
+require get_template_directory() . '/src/php/inc/theme-settings.php';
 
 // Set the content width based on the theme's design and stylesheet.
 if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
-if ( ! function_exists( 'understrap_setup' ) ) :
+if ( ! function_exists( 'ship_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -20,7 +20,7 @@ if ( ! function_exists( 'understrap_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function understrap_setup() {
+	function ship_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -91,8 +91,8 @@ if ( ! function_exists( 'understrap_setup' ) ) :
 		// Check and setup theme default settings.
 		setup_theme_default_settings();
 	}
-endif; // understrap_setup.
-add_action( 'after_setup_theme', 'understrap_setup' );
+endif; // ship_setup.
+add_action( 'after_setup_theme', 'ship_setup' );
 
 if ( ! function_exists( 'custom_excerpt_more' ) ) {
 	/**
