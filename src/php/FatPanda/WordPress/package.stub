@@ -1,6 +1,6 @@
 {
   "name": "ship",
-  "version": "1.0.0",
+  "version": "*",
   "description": "Wordpress Theme framework",
   "main": "index.js",
   "scripts": {

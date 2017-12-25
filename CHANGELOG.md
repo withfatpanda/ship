@@ -1,5 +1,8 @@
 # Ship change history
 
+## 1.0.1 December 25, 2017
+- Hot fix project setup script to properly populate package.json project name field
+
 ## 1.0.0 December 24, 2017 - first release
 
 ---

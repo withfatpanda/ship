@@ -1,7 +1,7 @@
 {
     "name": "withfatpanda/ship",
     "type": "wordpress-theme",
-    "version": "1.0.0",
+    "version": "*",
     "license": "GPL-2.0",
     "require": {
         
