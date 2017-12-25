@@ -167,7 +167,7 @@ When loading an asset via PHP, use the global function `asset($path)` where `$pa
 
 Generating asset URLs this way will incorporate the assets' current versions, thus ensuring that browsers load the latest copies. For an example in context, refers to the script `inc/enqueue.php`.
 
-### Live Reloading
+### Live reloading
 Coming soon.
 
 ### Sass: Syntactically Awesome Style Sheets
