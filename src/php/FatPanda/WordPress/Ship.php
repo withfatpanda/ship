@@ -30,7 +30,7 @@ class Ship {
       'Theme URI' => 'https://github.com/collegeman/ship',
       'Author' => 'Fat Panda, LLC',
       'Author URI' => 'https://www.withfatpanda.com',
-      'Description' => 'A WordPress Theme Framework based on Underscores, Bootstrap, based on UnderStrap',
+      'Description' => 'A WordPress Theme Framework based on UnderStrap (Underscores + Bootstrap)',
       'Version' => '1.0.0',
       'License' => 'GPL-2.0',
       'License URI' => 'http://www.gnu.org/licenses/gpl-2.0.html',
