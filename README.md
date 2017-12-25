@@ -163,7 +163,9 @@ This file, generated automatically during the build, is used for establishing ve
 ### Loading assets
 When loading assets in your stylesheets, they should be versioned automatically.
 
-When loading an asset via PHP, use the global function `asset($path)`. Generating asset URLs this way will incorporate the assets' current versions, thus ensuring that browsers load the latest copies. For an example in context, refers to the script `inc/enqueue.php`.
+When loading an asset via PHP, use the global function `asset($path)` where `$path` is relative to your theme's assets folder. For example, invoking `asset('css/theme.css')` would generate a URL for your theme's main stylesheet.
+
+Generating asset URLs this way will incorporate the assets' current versions, thus ensuring that browsers load the latest copies. For an example in context, refers to the script `inc/enqueue.php`.
 
 ### Live Reloading
 Coming soon.
