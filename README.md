@@ -18,7 +18,8 @@ See [changelog](CHANGELOG.md)
 ## Basic Features
 - WordPress starter theme provides all standard views 
 - Combines Underscore's PHP and JavaScript baseline with Bootstrap's front-end framework
-- Uses NPM to manage front-end dependencies and build minified source files
+- Uses NPM exclusively (bye-bye Bower) to manage front-end dependencies 
+- Builds minified source files using Laravel Mix (Webpack)
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
 
 ### And, thanks entirely to UnderStrap and Underscores:
