@@ -176,11 +176,15 @@ If you're not using a CSS preprocessor to build your stylesheets, you're wasting
 Learn more about Sass [here](http://sass-lang.com/).
 
 ### ES6 and CommonJS
+More details coming soon.
 
 ### Vue and Bootstrap + Vue
 Coming soon.
 
 ### Customizing your build
+Your front-end build is powered by NPM and Laravel Mix (Webpack). The build commands described above in *Building* can be found in your `package.json` file in the section named `scripts`. They all ultimately invoke Webpack builds by way of Laravel Mix.
+
+Laravel Mix can be configured by editing `webpack.mix.js`. Most of the functions available to you for automating your builds are listed in this configuration file. You can also read Mix's documentation [here](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme).
 
 ### RTL styles?
 Just add a new file to the themes root folder called rtl.css. Add all alignments to this file according to this description:
