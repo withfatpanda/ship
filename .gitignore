@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-npm.log
 yarn-error.log
 dist/
 dist-product/
+npm-debug.log

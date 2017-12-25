@@ -1,11 +1,16 @@
-# Rocket: WordPress Theme Framework
+# Ship: WordPress Theme Framework
 
 Ship is a WordPress Theme Framework based on [UnderStrap](https://understrap.com).
 
-Thanks to UnderStrap, Ship combines [Underscores](https://underscores.me) with Bootstrap (version 4), making for a world-class starting point for your next WordPress theme project. We called it "Ship" because it helps us ship great web experiences, faster.
+Thanks to UnderStrap, Ship combines [Underscores](https://underscores.me) with Bootstrap (version 4), making for a world-class starting point for your next WordPress theme project. 
+
+We called the framework "Ship" because it helps us ship great web experiences, faster.
 
 ## License
 Like UnderStrap and Underscores, Ship is released under the terms of the [GPL version 2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) or (at your option) any later version.
+
+## Support
+If you need or can support this project, please head over to [issues](https://github.com/withfatpanda/ship/issues).
 
 ## Changelog
 See [changelog](CHANGELOG.md)
@@ -94,13 +99,13 @@ The JS and CSS source files that underpin your new theme are as follows—there 
 
 **img/header.jpg** is an example so that you know where to place static imagery for your theme; files placed here are optimized and copied to public assets during the build
 
-**js/customerizer.js** 
+**js/customizer.js** 
 
 ### Front-end compiled files
 
 
-### 
-To work and compile your Sass files on the fly start:
+### ES6 and CommonJS
+
 
 
 ### Customizing your build
@@ -133,4 +138,4 @@ and of course
 - Bootstrap Gallery Script based on Roots Sage Gallery: https://github.com/roots/sage/blob/5b9786b8ceecfe717db55666efe5bcf0c9e1801c/lib/gallery.php
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-139292-31/chromeskel_a/readme)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-5440532-14/withfatpanda/ship/README.md)](https://github.com/igrigorik/ga-beacon)

@@ -62,7 +62,8 @@ if (process.env.MIX_BUILD_DIST) {
       '!.travis.yml',
       '!jshintignore', 
       '!codesniffer.ruleset.xml',
-      '!webpack.mix.js', 
+      '!webpack.mix.js',
+      '!yarn.lock', 
       '*'
     ]).pipe(gulp.dest('dist/'));
   });

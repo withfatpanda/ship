@@ -25,17 +25,13 @@ class Ship {
 
   function setupLocalProject($useDefaults = false)
   {
-    $composer = (array) json_decode($this->readLocalFile('src/php/FatPanda/WordPress/composer.stub'));
-
-    $composer['scripts'] = (object) [];
-
     $meta = [
       'Theme Name' => 'Ship',
       'Theme URI' => 'https://github.com/collegeman/ship',
       'Author' => 'Fat Panda, LLC',
       'Author URI' => 'https://www.withfatpanda.com',
-      'Description' => 'A Theme Framework based on Underscores, Bootstrap, and inspired by Understrap by Holger Koenemann',
-      'Version' => '0.0.1',
+      'Description' => 'A WordPress Theme Framework based on Underscores, Bootstrap, based on UnderStrap',
+      'Version' => '1.0.0',
       'License' => 'GPL-2.0',
       'License URI' => 'http://www.gnu.org/licenses/gpl-2.0.html',
       'Text Domain' => 'understrap',
@@ -47,12 +43,15 @@ class Ship {
     $styleStub = $this->readLocalFile('src/php/FatPanda/WordPress/style.stub');
 
     foreach($meta as $field => $default) {
-      $finalMeta[] = "{$field}: " . ($useDefaults ? $default : $this->prompt($field, $default));
+      $finalMeta[] = "{$field}: " . ($value = $useDefaults ? $default : $this->prompt($field, $default));
+      $meta[$field] = $value;
     }
 
     $style = str_replace('{{meta}}', implode("\n", $finalMeta), $styleStub);
 
     $this->writeLocalFile('style.css', $style);
+
+    $composer = (array) json_decode($this->readLocalFile('src/php/FatPanda/WordPress/composer.stub'));
 
     $composerFields = [
       'name' => 'Package Name',
@@ -60,12 +59,27 @@ class Ship {
     ];
 
     if (!$useDefaults) {
+      $composer['scripts'] = (object) [];
+
       foreach($composerFields as $field => $label) {
         $composer[$field] = $this->prompt($label, $composer[$field]);
       }
     }
 
     $this->writeLocalFile('composer.json', str_replace('\/', '/', json_encode($composer, JSON_PRETTY_PRINT)));
+
+    $package = (array) json_decode($this->readLocalFile('src/php/FatPanda/WordPress/package.stub'));
+
+    if (!$useDefaults) {
+      $package['bugs'] = (object) [];
+      $package['homepage'] = $meta['Theme URI'];
+      $package['description'] = $meta['Description'];
+      $package['version'] = $meta['Version'];
+      $package['author'] = $meta['Author'];
+      $package['license'] = $meta['License'];
+    }
+
+    $this->writeLocalFile('package.json', str_replace('\/', '/', json_encode($package, JSON_PRETTY_PRINT)));
   }
 
   static function getBasePath($filePath = '')

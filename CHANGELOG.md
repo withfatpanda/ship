@@ -1,6 +1,6 @@
 # Ship change history
 
-## 0.1 December 24, 2017 - first release
+## 1.0.0 December 24, 2017 - first release
 
 ---
 
