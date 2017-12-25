@@ -1,14 +1,5 @@
 /*
-Theme Name: Ship
-Theme URI: https://github.com/collegeman/ship
-Author: Fat Panda, LLC
-Author URI: https://www.withfatpanda.com
-Description: A Theme Framework based on Underscores, Bootstrap, and inspired by Understrap by Holger Koenemann
-Version: 1.0.0
-License: GPL-2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: understrap
-Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
+{{meta}}
 
 This theme, like WordPress, is licensed under the GPL.
 This theme is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.

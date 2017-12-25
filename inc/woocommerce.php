@@ -23,6 +23,7 @@ if ( ! function_exists( 'woocommerce_support' ) ) {
 		add_filter( 'woocommerce_form_field_args', 'wc_form_field_args', 10, 3 );
 	}
 }
+
 /**
  * Filter hook function monkey patching form classes
  * Author: Adriano Monecchi http://stackoverflow.com/a/36724593/307826

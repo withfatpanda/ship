@@ -1,4 +1,5 @@
 let mix = require('laravel-mix');
+let del = require('del');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,8 +12,23 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/theme.js', 'public/')
-   .sass('resources/assets/sass/theme.scss', 'public/');
+mix.js('src/js/theme.js', 'assets/js')
+  .js('src/js/customizer.js', 'assets/js')
+  .sass('src/sass/theme.scss', 'assets/css')
+  .sass('src/sass/custom-editor-style.scss', 'assets/css')
+  .copy('node_modules/font-awesome/fonts', 'assets/fonts')
+  .copy('src/img', 'assets/img')
+  .setPublicPath('assets/')
+  .options({
+    processCssUrls: false
+  })
+  .version()
+  .sourceMaps();
+
+if (process.env.MIX_BUILD_DIST) {
+  del(['dist/']);
+}
+
 
 // Full API
 // mix.js(src, output);

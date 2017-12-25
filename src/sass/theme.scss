@@ -1,0 +1,14 @@
+// Add your variables into this file, overwriting dependency defaults
+@import "theme/variables";
+// Load Bootstrap
+@import "~bootstrap/scss/bootstrap";
+// Load some Understrap baseline styles
+@import "understrap";
+// Font Awesome
+@import "~font-awesome/scss/font-awesome";
+// Load the media components from underscores
+@import "underscores";
+// Put site-specific customizations here:
+@import "theme/theme";
+// Contact Form 7 features:
+@import "theme/contact-form7";

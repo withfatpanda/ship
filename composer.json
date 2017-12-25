@@ -1,10 +1,17 @@
 {
-    "name": "withfatpanda/theme-name",
+    "name": "withfatpanda/rocket",
     "type": "wordpress-theme",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "license": "GPL-2.0",
-    "private": true,
-    "require": {
-
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "src/php/"
+        ]
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "FatPanda\\WordPress\\Ship::postCreateProjectCmd"
+        ]
     }
 }
