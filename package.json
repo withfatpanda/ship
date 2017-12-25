@@ -28,11 +28,12 @@
   },
   "homepage": "https://github.com/withfatpanda/ship",
   "devDependencies": {
+    "bootstrap": "4.0.0-beta",
+    "bootstrap-vue": "^1.4.0",
     "del": "^3.0.0",
     "font-awesome": "^4.7.0",
-    "bootstrap": "4.0.0-beta",
-    "vue": "^2.5.13",
-    "bootstrap-vue": "^1.4.0",
-    "laravel-mix": "^1.7.2"
+    "gulp": "^3.9.1",
+    "laravel-mix": "^1.7.2",
+    "vue": "^2.5.13"
   }
 }

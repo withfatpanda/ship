@@ -1,5 +1,6 @@
 let mix = require('laravel-mix');
 let del = require('del');
+let gulp = require('gulp');
 
 /*
  |--------------------------------------------------------------------------
@@ -14,8 +15,8 @@ let del = require('del');
 
 mix.js('src/js/theme.js', 'assets/js')
   .js('src/js/customizer.js', 'assets/js')
-  .sass('src/sass/theme.scss', 'assets/css')
-  .sass('src/sass/custom-editor-style.scss', 'assets/css')
+  .sass('src/scss/theme.scss', 'assets/css')
+  .sass('src/scss/custom-editor-style.scss', 'assets/css')
   .copy('node_modules/font-awesome/fonts', 'assets/fonts')
   .copy('src/img', 'assets/img')
   .setPublicPath('assets/')
@@ -25,10 +26,47 @@ mix.js('src/js/theme.js', 'assets/js')
   .version()
   .sourceMaps();
 
-if (process.env.MIX_BUILD_DIST) {
-  del(['dist/']);
-}
+/*
+ |--------------------------------------------------------------------------
+ | Package theme for distribution
+ |--------------------------------------------------------------------------
+ |
+ */
 
+if (process.env.MIX_BUILD_DIST) {
+  del([
+    'dist/**/*'
+  ]).then(function() {
+    gulp.src([
+      '**/*',
+      '!node_modules',
+      '!node_modules/**',
+      '!src/js',
+      '!src/js/**',
+      '!src/scss',
+      '!src/scss/**',
+      '!src/img',
+      '!src/img/**',
+      '!dist',
+      '!dist/**',
+      '!composer.json',
+      '!composer.lock',
+      '!dist-product',
+      '!dist-product/**',
+      '!readme.txt',
+      '!npm-debug.log',
+      '!README.md',
+      '!package.json',
+      '!gulpfile.js',
+      '!CHANGELOG.md',
+      '!.travis.yml',
+      '!jshintignore', 
+      '!codesniffer.ruleset.xml',
+      '!webpack.mix.js', 
+      '*'
+    ]).pipe(gulp.dest('dist/'));
+  });
+}
 
 // Full API
 // mix.js(src, output);

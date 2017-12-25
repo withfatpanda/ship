@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages.
  *
- * @package understrap
+ * @package ship
  */
 
 get_header();

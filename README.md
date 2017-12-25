@@ -25,17 +25,18 @@ See [changelog](CHANGELOG.md)
 ## Advanced Features
 All are works in progress.
 
-- Image optimization
-- Use [Vue.js](https://vuejs.org/) to build your theme to the [REST API](https://developer.wordpress.org/rest-api/)
-- A framework for authoring theme builders based on [Advanced Custom Fields](https://www.advancedcustomfields.com)
-- Inspiration for building new and interesting applications on top of WordPress
+- Distribution script (refactored for Webpack)
+- Algolia ready
+- Image optimization built into front-end build
+- [Vue.js](https://vuejs.org/) for building themes that use the [REST API](https://developer.wordpress.org/rest-api/)
+- A theme builder framework based on [Advanced Custom Fields](https://www.advancedcustomfields.com)
 
 ## Installation
 
 ### Classic install
 - Download Ship from [GitHub](https://github.com/withfatpanda/ship)
 - Upload it into your WordPress themes folder, e.g., `/wp-content/themes/`
-- Login to your WordPress admin
+- Log into your WordPress admin
 - Go to **Appearance → Themes**
 - Activate the Ship theme
 
@@ -48,8 +49,9 @@ All are works in progress.
 ### Bedrock install
 We love building WordPress sites with [Bedrock](https://roots.io/bedrock/). If you have a Bedrock site running, instead of nesting your theme inside your WordPress codebase, you can use the Composer autoloader to bootstrap your theme from any path on your local system
 
-- Create your project where you want it using `composer create-project withfatpanda/ship path/to/your-theme`
-- During the setup process, take note of what you provide for your *Package name* setting, e.g., `your-package/name` (don't use that; make one up for yourself)
+- Open your terminal
+- Create your project where you want it using `composer create-project withfatpanda/ship "path/to/your-theme"`
+- During the setup processveeeeeevkslklmffdvfvf, take note of what you provide for your *Package name* setting, e.g., `your-package/name` (don't use that; make one up for yourself)
 - Edit the Bedrock site's `composer.json`, and add a repository, like this:
 
 ```
@@ -74,7 +76,7 @@ Next, from the root of your theme project, run `npm install`.
 Then, you can test build with the following command: `npm run dev`. If you get a "Compiled successfully..." message, then it's all working.
 
 ### Front-end source files
-The JS and CSS source files that underpin your new theme are as follows—there are other files in there too, but the below are the ones relevant to learning this part:
+The JS and CSS source files that underpin your new theme are as follows—there are other files in there too, but those listed below are the ones relevant to learning this part:
 
 ```
 ├── src
@@ -90,30 +92,21 @@ The JS and CSS source files that underpin your new theme are as follows—there 
         └── customer-editor-style.scss
 ```
 
-**img/header.jpg** is an example 
+**img/header.jpg** is an example so that you know where to place static imagery for your theme; files placed here are optimized and copied to public assets during the build
+
+**js/customerizer.js** 
+
+### Front-end compiled files
 
 
-
-### Doing work
+### 
 To work and compile your Sass files on the fly start:
 
-- `$ gulp watch`
 
-Or, to run with Browser-Sync:
-
-- First change the browser-sync options to reflect your environment in the file `/gulpfile.js` in the beginning of the file:
-```javascript
-var browserSyncOptions = {
-    proxy: "localhost/theme_test/", // <----- CHANGE HERE
-    notify: false
-};
-```
-- then run: `$ gulp watch-bs`
-
+### Customizing your build
 
 ### RTL styles?
-Just add a new file to the themes root folder called rtl.css. Add all alignments to 
-this file according to this description:
+Just add a new file to the themes root folder called rtl.css. Add all alignments to this file according to this description:
 https://codex.wordpress.org/Right_to_Left_Language_Support
 
 ## Page Templates
@@ -129,8 +122,6 @@ The `empty.php` template displays a header and a footer only. A good starting po
 ### Full Width Template
 
 The `fullwidthpage.php` template has full width layout without a sidebar.
-
-[1] Visit [http://browsersync.io](http://browsersync.io) for more information on Browser Sync
 
 ## Licenses & Credits
 - UnderStrap: https://understrap.com (GPL version 2)
