@@ -25,14 +25,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 
+							<a href="<?php  echo esc_url( __( 'http://wordpress.org/', 'understrap' ) ); ?>"><?php printf( 
 							/* translators:*/
-							esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
+							esc_html__( 'Proudly powered by %s', 'understrap' ), 'WordPress' ); ?></a>
 								<span class="sep"> | </span>
 					
 							<?php printf( // WPCS: XSS ok.
 							/* translators:*/
-								esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ), $the_theme->get( 'Name' ),  '<a href="'.esc_url( __('http://understrap.com', 'understrap')).'">understrap.com</a>' ); ?> 
+								esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ), $the_theme->get( 'Name' ),  '<a href="'.esc_url( __('https://www.withfatpanda.com', 'understrap')).'">Fat Panda</a>' ); ?> 
 				
 							(<?php printf( // WPCS: XSS ok.
 							/* translators:*/
