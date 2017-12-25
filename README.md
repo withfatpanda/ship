@@ -143,7 +143,7 @@ Running any of the front-end build scripts will generate and place files into an
     │   ├── theme.css
     │   └── theme.css.map
     ├── fonts
-    │   └── ... all the images from src/img
+    │   └── ... all the fonts extracted during the build
     ├── img
     │   └── ... all the images from src/img
     ├── js
@@ -154,12 +154,16 @@ Running any of the front-end build scripts will generate and place files into an
     └── mix-manifest.json
 ```
 
-The relationships between these compiled files and the raw source files should be fairly straight-forward (tip: they're all named the same). The `fonts/` folder will contain any font files extracted during the build, most notably, the Font Awesome fonts. 
+The relationships between these compiled files and the raw source files should be fairly straight-forward (tip: they're all named the same). 
 
-Of note above is the `mix-manifest.json` file. This manifest file is used for establishing versions for your compiled files, i.e., *versioning*. The version numbers are automatically appended to asset URLs, thus forcing expiration of these resources from visitors' browsers.
+Of special note above is the `mix-manifest.json` file. 
+
+This file, generated automatically during the build, is used for establishing versions for your compiled files, i.e., *versioning*. The version numbers are automatically appended to asset URLs, thus forcing expiration of these resources from visitors' browsers.
 
 ### Loading assets
+When loading assets in your stylesheets, they should be versioned automatically.
 
+When loading an asset via PHP, use the global function `asset($path)`. Generating asset URLs this way will incorporate the assets' current versions, thus ensuring that browsers load the latest copies. For an example in context, refers to the script `inc/enqueue.php`.
 
 ### Live Reloading
 Coming soon.
@@ -193,6 +197,8 @@ The `empty.php` template displays a header and a footer only. A good starting po
 ### Full Width Template
 
 The `fullwidthpage.php` template has full width layout without a sidebar.
+
+## Functions and Includes
 
 ## Licenses & Credits
 - UnderStrap: https://understrap.com (GPL version 2)
