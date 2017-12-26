@@ -43,13 +43,6 @@ All of these things are works in progress.
 
 ## Installation
 
-### Classic install
-- Download Ship from [GitHub](https://github.com/withfatpanda/ship)
-- Upload it into your WordPress themes folder, e.g., `/wp-content/themes/`
-- Log into your WordPress admin
-- Go to **Appearance → Themes**
-- Activate the Ship theme
-
 ### Composer project creation
 - Open your terminal
 - Change to the directory where you want to create a Ship-based project
@@ -74,6 +67,9 @@ We love building WordPress sites with [Bedrock](https://roots.io/bedrock/). If y
 ```
 
 - Back at the command line, now use Composer to load your theme as a dependency: `composer require your-package/name:*`
+
+### Classic install
+Coming soon. (Need to create a nightly snapshot of dist.)
 
 ## Development workflow
 Ship wants your front-end development workflow to be as painless as possible. The best front-end build system for the money is [Webpack](https://webpack.github.io/), but it's also the most difficult to learn. Thankfully, there's [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)—Mix handles 80% of the difficult Webpack config work for you, and Ship provides sensible, WordPress-specific defaults for the rest. 
