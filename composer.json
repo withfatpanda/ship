@@ -1,9 +1,17 @@
 {
     "name": "withfatpanda/ship",
     "type": "wordpress-theme",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "GPL-2.0",
-    "require": {},
+    "authors": [
+        {
+            "name": "Fat Panda, LLC",
+            "homepage": "https://www.withfatpanda.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.4"
+    },
     "autoload": {
         "classmap": [
             "src/php/"

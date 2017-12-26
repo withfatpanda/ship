@@ -1,6 +1,8 @@
 <?php
 namespace FatPanda\WordPress;
 
+use Illuminate\Support\Str;
+
 class Ship {
 
   private static $instance;
@@ -31,7 +33,7 @@ class Ship {
       'Author' => 'Fat Panda, LLC',
       'Author URI' => 'https://www.withfatpanda.com',
       'Description' => 'A WordPress Theme Framework based on UnderStrap (Underscores + Bootstrap)',
-      'Version' => '1.0.1',
+      'Version' => '1.0.2',
       'License' => 'GPL-2.0',
       'License URI' => 'http://www.gnu.org/licenses/gpl-2.0.html',
       'Text Domain' => 'understrap',
@@ -75,7 +77,7 @@ class Ship {
     $package['version'] = $meta['Version'];
 
     if (!$useDefaults) {
-      $package['name'] = slugify($meta['Theme Name']);
+      $package['name'] = Str::slug($meta['Theme Name']);
       $package['bugs'] = (object) [];
       $package['homepage'] = $meta['Theme URI'];
       $package['description'] = $meta['Description'];
@@ -124,37 +126,4 @@ class Ship {
     return $in ?: $default;
   }
 
-}
-
-/**
- * Generate a slug from arbitrary text.
- * @param  String To slugify
- * @return  String The slug
- * @see https://stackoverflow.com/questions/2955251/php-function-to-make-slug-url-string
- */
-function slugify($text)
-{
-  // replace non letter or digits by -
-  $text = preg_replace('~[^\pL\d]+~u', '-', $text);
-
-  // transliterate
-  $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
-
-  // remove unwanted characters
-  $text = preg_replace('~[^-\w]+~', '', $text);
-
-  // trim
-  $text = trim($text, '-');
-
-  // remove duplicate -
-  $text = preg_replace('~-+~', '-', $text);
-
-  // lowercase
-  $text = strtolower($text);
-
-  if (empty($text)) {
-    return 'n-a';
-  }
-
-  return $text;
 }

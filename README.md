@@ -33,6 +33,8 @@ All of these things are works in progress.
 
 - Live reloading to speed up your development workflow
 - Distribution script (refactored for Webpack) produces a clean copy of the theme ready to ship, without all of the dev stuff (config files, raw JS, and your SCSS)
+- Laravel's global helpers like `Collection` and `Str` are available
+- Support for using [Laravel Blade](https://laravel.com/docs/5.4/blade) without having to learn a new template hierarchy
 - Build environment configuration files
 - Algolia ready: real-time search features FTW
 - Automatic Image optimization (refactored for Webpack)

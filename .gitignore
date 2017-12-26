@@ -4,3 +4,4 @@ yarn-error.log
 dist/
 dist-product/
 npm-debug.log
+studio.json

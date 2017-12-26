@@ -3,17 +3,23 @@
     "type": "wordpress-theme",
     "version": "*",
     "license": "GPL-2.0",
+    "authors": [
+        {
+            "name": "Fat Panda, LLC",
+            "homepage": "https://www.withfatpanda.com"
+        }
+    ],
     "require": {
-        
+        "illuminate/support": "~5.4"
     },
     "autoload": {
-      "classmap": [
-        "src/php/"
-      ]
+        "classmap": [
+            "src/php/"
+        ]
     },
     "scripts": {
-      "post-create-project-cmd": [
-        "FatPanda\\WordPress\\Ship::postCreateProjectCmd"
-      ]
+        "post-create-project-cmd": [
+            "FatPanda\\WordPress\\Ship::postCreateProjectCmd"
+        ]
     }
 }

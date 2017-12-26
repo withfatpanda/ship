@@ -23,6 +23,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 
+					<!--
+
 					<div class="site-info">
 
 							<a href="<?php  echo esc_url( __( 'http://wordpress.org/', 'understrap' ) ); ?>"><?php printf( 
@@ -37,7 +39,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 							(<?php printf( // WPCS: XSS ok.
 							/* translators:*/
 								esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' ) ); ?>)
-					</div><!-- .site-info -->
+					</div>
+
+					-->
 
 				</footer><!-- #colophon -->
 

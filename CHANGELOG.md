@@ -1,5 +1,10 @@
 # Ship change history
 
+## 1.0.2 December 25, 2017
+- Hide site-info crap by default
+- Add Illuminate\Support library, for a little bit of sugar
+- 
+
 ## 1.0.1 December 25, 2017
 - Hot fix project setup script to properly populate package.json project name field
 
