@@ -1,6 +1,6 @@
 <?php
 /**
- * Understrap functions and definitions
+ * Ship functions and definitions
  *
  * @package ship
  */
