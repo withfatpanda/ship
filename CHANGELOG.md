@@ -1,14 +1,17 @@
 # Ship change history
 
+## 1.0.3 December 26, 2017
+- Flush the old gulpfile.js; no need to hang onto that relic
+- 
+
 ## 1.0.2 December 25, 2017
 - Hide site-info crap by default
 - Add Illuminate\Support library, for a little bit of sugar
-- 
 
 ## 1.0.1 December 25, 2017
 - Hot fix project setup script to properly populate package.json project name field
 
-## 1.0.0 December 24, 2017 - first release
+## 1.0.0 December 24, 2017 - first release of Ship
 
 ---
 

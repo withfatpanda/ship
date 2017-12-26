@@ -11,11 +11,6 @@
 require get_template_directory() . '/src/php/inc/assets.php';
 
 /**
- * Blade template functionality.
- */
-require get_template_directory() . '/src/php/inc/blade.php';
-
-/**
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/src/php/inc/extras.php';
@@ -66,6 +61,11 @@ require get_template_directory() . '/src/php/inc/custom-comments.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/src/php/inc/jetpack.php';
+
+/**
+ * Load custom WordPress nav walker.
+ */
+require get_template_directory() . '/src/php/inc/bootstrap-wp-navwalker.php';
 
 /**
  * Load WooCommerce functions.

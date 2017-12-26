@@ -10,16 +10,21 @@
         }
     ],
     "require": {
-        "illuminate/support": "~5.4"
+        "php": ">=7.0",
+        "illuminate/support": "~5.4",
+        "duncan3dc/blade": "^4.1"
     },
     "autoload": {
-        "classmap": [
-            "src/php/"
+        "psr-4": {
+            "FatPanda\\WordPress\\Ship\\": "src/php/Ship"
+        },
+        "files": [
+            "src/php/WP_Bootstrap_Navwalker.php"
         ]
     },
     "scripts": {
         "post-create-project-cmd": [
-            "FatPanda\\WordPress\\Ship::postCreateProjectCmd"
+            "FatPanda\\WordPress\\Ship\\Setup::postCreateProjectCmd"
         ]
     }
 }

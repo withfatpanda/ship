@@ -5,4 +5,5 @@ dist/
 dist-product/
 npm-debug.log
 studio.json
-vendor
+vendor/
+assets/

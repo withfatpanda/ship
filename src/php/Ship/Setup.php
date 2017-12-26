@@ -1,9 +1,9 @@
 <?php
-namespace FatPanda\WordPress;
+namespace FatPanda\WordPress\Ship;
 
 use Illuminate\Support\Str;
 
-class Ship {
+class Setup {
 
   private static $instance;
 
