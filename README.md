@@ -2,7 +2,7 @@
 
 Ship is a WordPress Theme Framework based on [UnderStrap](https://understrap.com).
 
-Thanks to UnderStrap, Ship combines [Underscores](https://underscores.me) with Bootstrap (version 4), making for a world-class starting point for your next WordPress theme project. 
+Thanks to UnderStrap, Ship combines [Underscores](https://underscores.me) with [Bootstrap 4](http://getbootstrap.com), making for a world-class starting point for your next WordPress theme project. 
 
 We called the framework "Ship" because it helps us ship great web experiences, faster.
 
@@ -18,8 +18,8 @@ See [changelog](CHANGELOG.md)
 ## Basic Features
 - A WordPress starter theme on which to build your next awesome theme project
 - Combines Underscore's PHP and JavaScript baseline with Bootstrap's front-end framework
-- Uses NPM exclusively (bye-bye, Bower) to manage front-end dependencies 
-- Builds minified source files using Laravel Mix (Webpack in a beautiful disguise)
+- Uses [NPM](https://www.npmjs.com/) exclusively (bye-bye, Bower) to manage front-end dependencies and run your build scripts
+- Builds minified source files using [Laravel Mix](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme) ([Webpack](https://webpack.github.io/) in a beautiful disguise)
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/) for icons
 
 ### And, thanks entirely to UnderStrap and Underscores:
