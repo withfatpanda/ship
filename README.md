@@ -16,11 +16,11 @@ If you need or can support this project, please head over to [issues](https://gi
 See [changelog](CHANGELOG.md)
 
 ## Basic Features
-- WordPress starter theme provides all standard views 
+- A WordPress starter theme on which to build your next awesome theme project
 - Combines Underscore's PHP and JavaScript baseline with Bootstrap's front-end framework
-- Uses NPM exclusively (bye-bye Bower) to manage front-end dependencies 
-- Builds minified source files using Laravel Mix (Webpack)
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+- Uses NPM exclusively (bye-bye, Bower) to manage front-end dependencies 
+- Builds minified source files using Laravel Mix (Webpack in a beautiful disguise)
+- [Font Awesome](http://fortawesome.github.io/Font-Awesome/) for icons
 
 ### And, thanks entirely to UnderStrap and Underscores:
 - Jetpack ready
@@ -31,15 +31,14 @@ See [changelog](CHANGELOG.md)
 ## Advanced Features
 All of these things are works in progress.
 
-- Live reloading to speed up your development workflow
-- Distribution script (refactored for Webpack) produces a clean copy of the theme ready to ship, without all of the dev stuff (config files, raw JS, and your SCSS)
-- Laravel's global helpers like `Collection` and `Str` are available
-- Support for using [Laravel Blade](https://laravel.com/docs/5.4/blade) without having to learn a new template hierarchy
-- Build environment configuration files
-- Algolia ready: real-time search features FTW
-- Automatic Image optimization (refactored for Webpack)
-- [Vue.js](https://vuejs.org/) for building themes that use the [REST API](https://developer.wordpress.org/rest-api/), and [Bootstrap + Vue](https://bootstrap-vue.js.org/) for speeding up development of fancy UI
+- Laravel's global helpers like [`Collection`](https://laravel.com/docs/5.4/collections) (like `collect([])->where('name', 'foo')`) and [`Str`](https://laravel.com/docs/5.4/helpers) (see *Strings*, like `str_plural('cat', 2) === 'cats'`)
+- Your choice: use [Laravel Blade](https://laravel.com/docs/5.4/blade) or traditional PHP templates; you can even use Blade templates on a case-by-case basis!
+- Algolia ready: real-time search makes everything more awesome
+- Automatic Image optimization for the static images in your theme
+- [Vue.js](https://vuejs.org/) for building themes that use the [REST API](https://developer.wordpress.org/rest-api/), and [Bootstrap + Vue](https://bootstrap-vue.js.org/) for speeding up development of fancy new UI
 - A theme builder framework based on [Advanced Custom Fields](https://www.advancedcustomfields.com)
+- Live reloading to speed up your development workflow
+- Distribution script produces a clean copy of the theme ready to ship, without all of the dev stuff (config files, raw JS, and your SCSS)
 
 ## Installation
 
