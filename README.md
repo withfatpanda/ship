@@ -18,7 +18,7 @@ See [changelog](CHANGELOG.md)
 ## Basic Features
 - A WordPress starter theme on which to build your next awesome theme project
 - Combines Underscore's PHP and JavaScript baseline with Bootstrap's front-end framework
-- Uses [NPM](https://www.npmjs.com/) exclusively (bye-bye, Bower) to manage front-end dependencies and run your build scripts
+- Uses [NPM](https://www.npmjs.com/) exclusively to manage front-end dependencies and run your build scripts (bye-bye, Bower)
 - Builds minified source files using [Laravel Mix](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme) ([Webpack](https://webpack.github.io/) in a beautiful disguise)
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/) for icons
 
@@ -31,7 +31,7 @@ See [changelog](CHANGELOG.md)
 ## Advanced Features
 All of these things are works in progress.
 
-- Laravel's global helpers like [`Collection`](https://laravel.com/docs/5.4/collections) (like `collect([])->where('name', 'foo')`) and [`Str`](https://laravel.com/docs/5.4/helpers) (see *Strings*, like `str_plural('cat', 2) === 'cats'`)
+- Laravel's Support package for features like [`Collection`](https://laravel.com/docs/5.4/collections) and `Str` (see *Strings* in [Helpers](https://laravel.com/docs/5.4/helpers))
 - Your choice: use [Laravel Blade](https://laravel.com/docs/5.4/blade) or traditional PHP templates; you can even use Blade templates on a case-by-case basis!
 - Algolia ready: real-time search makes everything more awesome
 - Automatic Image optimization for the static images in your theme
