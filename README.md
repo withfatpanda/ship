@@ -69,6 +69,12 @@ The JS and CSS source files that underpin your new theme are as follows—there 
         └── theme.scss
 ```
 
+You'll want to put your theme's JavaScript into `src/js/theme.js` and/or load other modules of code into that file.
+
+You'll want to put your theme's styles into `src/sass/theme/_theme.scss` and/or load other modules of code into *that* file. 
+
+#### Other front-end source files:
+
 **img/header.jpg** is an example so that you know where to place static imagery for your theme; files placed here are optimized and copied to public assets during the build
 
 **js/customizer.js** is where you can write code that will load into the [Customizer](https://codex.wordpress.org/Theme_Customization_API#Step_2:_Create_a_JavaScript_File); there are some examples therein

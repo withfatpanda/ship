@@ -15,9 +15,9 @@ let gulp = require('gulp');
 
 mix.js('src/js/theme.js', 'assets/js')
   .js('src/js/customizer.js', 'assets/js')
-  .sass('src/scss/theme.scss', 'assets/css')
-  .sass('src/scss/custom-editor-style.scss', 'assets/css')
-  .sass('src/scss/wpcom.scss', 'assets/css')
+  .sass('src/sass/theme.scss', 'assets/css')
+  .sass('src/sass/custom-editor-style.scss', 'assets/css')
+  .sass('src/sass/wpcom.scss', 'assets/css')
   .copy('node_modules/font-awesome/fonts', 'assets/fonts')
   .copy('src/img', 'assets/img')
   .setPublicPath('assets/')
