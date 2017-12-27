@@ -47,8 +47,8 @@ For those of you who want a quicker start instead, it goes something like this:
 - Create new project with composer: `composer create-project withfatpanda/ship "path/to/your/project"`
 - Install dependencies: `npm install`
 - Start your watcher (build in the background while you edit your code): `npm build watch`
-- Put your main JavaScript into `src/js/theme.js` 
-- Build Customizer features into `src/js/customizer.js` 
+- Put your theme's scripts into `src/js/theme.js` 
+- Build [Customizer](https://codex.wordpress.org/Theme_Customization_API) features in `src/js/customizer.js` 
 - Style your theme in `src/sass/theme/_theme.scss`
 - Style the content in the admin editors in `src/sass/custom-editor-style.scss`
 - Finish dev, test, distribute
