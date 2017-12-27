@@ -1,7 +1,7 @@
 # Ship: a WordPress Starter Theme
 Ship is a WordPress Starter Theme standing on the shoulders of giants like [Underscores](http://underscores.me), [UnderStrap](http://understrap.com), and [Sage](http://roots.io/sage). 
 
-We called it "Ship" because it helps us ship great web experiences, faster.
+We called it "Ship" because it helps us ship great web experiences, faster. That speed is achieved through some highly opinionated decisions about tools and process; if you want variety, fork Ship to create your own, or use [Sage](http://roots.io/sage).
 
 ## Why you should "Ship" your next WordPress Theme:
 - It's completely free (as in beer: GPL-2.0)
