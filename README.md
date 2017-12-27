@@ -56,7 +56,7 @@ For those of you who want a quicker start instead, it goes something like this:
 ### Installing Dependencies
 All of Ship's JS and CSS is built upon a core set of dependencies, chief among them being Bootstrap. 
 
-Your new build system Caravel Mix also loads as a dependency. 
+Your new build system Laravel Mix also loads as a dependency. 
 
 All of these dependencies are managed through [NPM](https://www.npmjs.com). If you don't have NPM installed, you'll need to [do that first](https://www.npmjs.com/get-npm).
 
