@@ -1,64 +1,55 @@
-# Ship: WordPress Theme Framework
+# Ship: a WordPress Starter Theme
+Ship is a WordPress Starter Theme standing on the shoulders of giants like [Underscores](http://underscores.me), [UnderStrap](http://understrap.com), and [Sage](http://roots.io/sage). 
 
-Ship is a WordPress Theme Framework based on [UnderStrap](https://understrap.com).
+We called it "Ship" because it helps us ship great web experiences, faster.
 
-Thanks to UnderStrap, Ship combines [Underscores](https://underscores.me) with [Bootstrap 4](http://getbootstrap.com), making for a world-class starting point for your next WordPress theme project. 
-
-We called the framework "Ship" because it helps us ship great web experiences, faster.
-
-## License
-Like UnderStrap and Underscores, Ship is released under the terms of the [GPL version 2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) or (at your option) any later version.
-
-## Support
-If you need or can support this project, please head over to [issues](https://github.com/withfatpanda/ship/issues). And if you're feeling flush, please support the [UnderStrap](http://understrap.com) project by purchasing a license for it.
-
-## Changelog
-See [changelog](CHANGELOG.md)
-
-## Basic Features
-- A WordPress starter theme on which to build your next awesome theme project
-- Combines Underscore's PHP and JavaScript baseline with Bootstrap's front-end framework
-- Uses [NPM](https://www.npmjs.com/) exclusively to manage front-end dependencies and run your build scripts (bye-bye, Bower)
-- Builds minified source files using [Laravel Mix](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme) ([Webpack](https://webpack.github.io/) in a beautiful disguise)
-- [Font Awesome](http://fortawesome.github.io/Font-Awesome/) for icons
-
-### And, thanks entirely to UnderStrap and Underscores:
+## Why you should "Ship" your next WordPress Theme:
+- It's completely free (as in beer: GPL-2.0)
+- Sass stylesheets based on [Bootstrap 4](https://getbootstrap.com)
+- Mobile-first, responsive design
+- Uses [NPM](https://www.npmjs.com/) to manage dependencies (bye Bower!)
+- Build script included, based on [Laravel Mix](https://github.com/JeffreyWay/laravel-mix/tree/master/docs#readme) ([Webpack](https://webpack.github.io/) in a beautiful disguise) 
+- Auto-minify, concatenate, and version CSS and JS
+- Traditional PHP templates or go [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) with [Laravel Blade](https://laravel.com/docs/5.4/blade) (requires PHP 7)
 - Jetpack ready
 - WooCommerce support
 - Contact Form 7 support
 - Translation ready
 
-## Advanced Features
-All of these things are works in progress.
-
-- Laravel's Support package for features like [`Collection`](https://laravel.com/docs/5.4/collections) and `Str` (see *Strings* in [Helpers](https://laravel.com/docs/5.4/helpers))
-- Your choice: use [Laravel Blade](https://laravel.com/docs/5.4/blade) or traditional PHP templates; you can even use Blade templates on a case-by-case basis!
-- Algolia ready: real-time search makes everything more awesome
-- Automatic Image optimization for the static images in your theme
-- [Vue.js](https://vuejs.org/) for building themes that use the [REST API](https://developer.wordpress.org/rest-api/), and [Bootstrap + Vue](https://bootstrap-vue.js.org/) for speeding up development of fancy new UI
+## Other features, in the works:
+- Algolia ready: real-time search for admins and visitors
+- [Vue.js](https://vuejs.org/) for building themes as [Single-Page Applications](https://en.wikipedia.org/wiki/Single-page_application)
 - A theme builder framework based on [Advanced Custom Fields](https://www.advancedcustomfields.com)
-- Live reloading to speed up your development workflow
-- Distribution script produces a clean copy of the theme ready to ship, without all of the dev stuff (config files, raw JS, and your SCSS)
+- Live reloading
+- A build script for generating commercial distributions
 
-## Installation
+## License
+Ship is released under the terms of the [GPL version 2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) or (at your option) any later version
 
-### Create a new project using Composer
+## Support
+If you need or can support this project, please head over to [issues](https://github.com/withfatpanda/ship/issues)
+
+## Changelog
+See [changelog](CHANGELOG.md)
+
+## Starting a new project
 You'll need to have [Composer](https://getcomposer.org/) installed.
 
-- Open your terminal
-- Change to the directory where you want to create a Ship-based project
-- Type `composer create-project withfatpanda/ship`
-- Answer the on-screen questions to generate your theme's template files and meta data
+1. Open your terminal
+2. Run `composer create-project withfatpanda/ship "your/theme/path"`
+3. Answer the on-screen questions
 
 ## Development
-Ship wants your front-end development workflow to be as painless as possible. The best front-end build system for the money is [Webpack](https://webpack.github.io/), but it's also the most difficult to learn. Thankfully, there's [Laravel Mix](https://github.com/JeffreyWay/laravel-mix)—Mix handles 80% of the difficult Webpack config work for you, and Ship provides sensible, WordPress-specific defaults for the rest. 
+Ship wants your workflow to be as painless as possible. Below we move quickly through several topics that might be new to you: *Dependency Management*, *Builds*, and *Asset Loading*. 
 
 ### Installing Dependencies
-All of Ship's JS and CSS is built upon a core set of dependencies, chief among them bootstrap. Webpack also loads as a dependency. All of this is handled by NPM, so if you don't have NPM installed, you'll need to [do that first](https://www.npmjs.com/get-npm).
+All of Ship's JS and CSS is built upon a core set of dependencies, chief among them being Bootstrap. Laravel Mix—your build system—also loads as a dependency. All of this is handled by [NPM](https://www.npmjs.com), so if you don't have NPM installed, you'll need to [do that first](https://www.npmjs.com/get-npm).
 
-Next, from the root of your theme project, run `npm install`. This will install of your dependencies into a folder called `node_modules/`. There are a lot of them. Don't let this freak you out: welcome to modern JavaScript development.
+Next, from the root of your theme project, run `npm install`. This will install of your dependencies into a folder called `node_modules/`. There are going to be a lot of files—don't let this freak you out. Welcome to modern JavaScript development.
 
-Once NPM and your dependencies are loaded, you can test-build with the following command: `npm run dev`. If you get a "Compiled successfully..." message, then it's all working.
+Once NPM and your dependencies are loaded, you can test-build with the following command: `npm run dev`. 
+
+If you get a "Compiled successfully..." message, then it's all working. If you don't, [post your issue here](https://github.com/withfatpanda/ship/issues).
 
 ### Front-end source files
 The JS and CSS source files that underpin your new theme are as follows—there are other files in there too, but those listed below are the ones relevant to learning this part:
@@ -99,7 +90,7 @@ Building your front-end code is as simple as running scripts with NPM at the com
 This will build your JS and CSS unminified and (when we finish building it) using development environment settings
 
 `npm run watch`
-This will build dev versions of your JS and CSS, unminified, and will begin "watching" your raw source files, recompiling them into the built output anytime you make a change
+Use this command for active development sessions—it will build dev versions of your JS and CSS, unminified, and will begin "watching" your raw source files, recompiling them into the built output anytime you make a change
 
 `npm run hot`
 **Coming soon**: Live Reloading; basically just like the `watch` command, except any changes to raw source files (including PHP files) result in your browser refreshing automatically, too
@@ -108,10 +99,10 @@ This will build dev versions of your JS and CSS, unminified, and will begin "wat
 This will build minified and versioned copies of your JS and CSS, ready for distribution
 
 `npm run dist`
-This will build distribution-ready copies of your JS and CSS, just like the `production` command, but then this command also creates a clean copy of your theme in `dist/`, ready to ship without all of the dev stuff (config files, raw JS, and your SCSS)
+This will build distribution-ready copies of your JS and CSS, just like the `production` command; then, this command creates a clean copy of your theme in `dist/` ready to ship without all of the dev stuff (build config files, raw JS and Sass code)
 
-### Front-end compiled files
-Running any of the front-end build scripts will generate and place files into an `assets/` folder:
+### Your built source files
+Running any of the front-end build scripts above will generate and place files into an `assets/` folder in the root of your project:
 
 ```
 ├── assets
@@ -132,32 +123,21 @@ Running any of the front-end build scripts will generate and place files into an
     └── mix-manifest.json
 ```
 
-The relationships between these compiled files and the raw source files should be fairly straight-forward (tip: they're all named the same). 
+The relationships between these compiled files and the raw source files should be fairly straight-forward (**Tip:** they're all named the same), but of special note is the `mix-manifest.json` file. 
 
-Of special note above is the `mix-manifest.json` file. 
-
-This file, generated automatically during the build, is used for establishing versions for your compiled files, i.e., *versioning*. The version numbers are automatically appended to asset URLs, thus forcing expiration of these resources from visitors' browsers.
+The `mix-manifest.json` file, generated automatically during each build, establishes versions for your compiled files, i.e., *versioning*. When using asset loading (see below), the file version numbers are automatically appended to their URLs—this helps to force expiration of these resources from visitors' browsers, keeping their experience of your theme up-to-date.
 
 ### Loading assets
-When loading assets in your stylesheets, they should be versioned automatically.
-
-When loading an asset via PHP, use the global function `asset($path)` where `$path` is relative to your theme's assets folder. For example, invoking `asset('css/theme.css')` would generate a URL for your theme's main stylesheet.
-
-Generating asset URLs this way will incorporate the assets' current versions, thus ensuring that browsers load the latest copies. For an example in context, refers to the script `inc/enqueue.php`.
+When loading a theme asset via PHP, use the global function `asset($path)` where `$path` is relative to your theme's assets folder. For example, invoking `asset('css/theme.css')` would generate a URL for your theme's main stylesheet. For an example in context, refer to the script `src/php/inc/enqueue.php`.
 
 ### Live reloading
 Coming soon.
 
 ### Sass: Syntactically Awesome Style Sheets
-If you're not using a CSS preprocessor to build your stylesheets, you're wasting a lot of time. If you've only ever used LESS, making the leap to Sass is fairly straightforward, and like us, we think you'll find Sass to be more robust and better-supported.
-
-Learn more about Sass [here](http://sass-lang.com/).
+If you're not using a CSS preprocessor to build your stylesheets, you're wasting a lot of time. If you've only ever used LESS, making the leap to Sass is fairly straightforward, and like us, we think you'll find Sass to be more robust and better-supported. Learn more about Sass [here](http://sass-lang.com/).
 
 ### ES6 and CommonJS
 More details coming soon.
-
-### Vue and Bootstrap + Vue
-Coming soon.
 
 ### Customizing your build
 Your front-end build is powered by NPM and Laravel Mix (Webpack). The build commands described above in *Building* can be found in your `package.json` file in the section named `scripts`. They all ultimately invoke Webpack builds by way of Laravel Mix.
@@ -168,23 +148,11 @@ Laravel Mix can be configured by editing `webpack.mix.js`. Most of the functions
 Just add a new file to the themes root folder called rtl.css. Add all alignments to this file according to this description:
 https://codex.wordpress.org/Right_to_Left_Language_Support
 
-## Page Templates
-
-### Blank Template
-
-The `blank.php` template is useful when working with various page builders and can be used as a starting blank canvas.
-
-### Empty Template
-
-The `empty.php` template displays a header and a footer only. A good starting point for landing pages.
-
-### Full Width Template
-
-The `fullwidthpage.php` template has full width layout without a sidebar.
-
-## Functions and Includes
+## Single-Page Application Themes
+Coming soon.
 
 ## Licenses & Credits
+- Sage: https://roots.io/sage
 - UnderStrap: https://understrap.com (GPL version 2)
 - Font Awesome: http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
 - Bootstrap: http://getbootstrap.com | https://github.com/twbs/bootstrap/blob/master/LICENSE (Code licensed under MIT documentation under CC BY 3.0.)
