@@ -54,11 +54,17 @@ For those of you who want a quicker start instead, it goes something like this:
 - Finish dev, test, distribute
 
 ### Installing Dependencies
-All of Ship's JS and CSS is built upon a core set of dependencies, chief among them being Bootstrap. Laravel Mix—your build system—also loads as a dependency. All of this is handled by [NPM](https://www.npmjs.com), so if you don't have NPM installed, you'll need to [do that first](https://www.npmjs.com/get-npm).
+All of Ship's JS and CSS is built upon a core set of dependencies, chief among them being Bootstrap. 
 
-Next, from the root of your theme project, run `npm install`. This will install of your dependencies into a folder called `node_modules/`. There are going to be a lot of files—don't let this freak you out. Welcome to modern JavaScript development.
+Your new build system Caravel Mix also loads as a dependency. 
 
-Once NPM and your dependencies are loaded, you can test-build with the following command: `npm run dev`. 
+All of these dependencies are managed through [NPM](https://www.npmjs.com). If you don't have NPM installed, you'll need to [do that first](https://www.npmjs.com/get-npm).
+
+Next, from the root of your theme project, run `npm install`. 
+
+All of your theme's dependencies will appear in a folder named `node_modules/`. There are going to be a lot of files—don't let this freak you out, and welcome to modern JavaScript development.
+
+Once your dependencies have loaded, you can test-build by running the following command: `npm run dev`. 
 
 If you get a "Compiled successfully..." message, then it's all working. If you don't, [post your issue here](https://github.com/withfatpanda/ship/issues).
 
