@@ -44,9 +44,10 @@ Ship wants your workflow to be as painless as possible. Below we move quickly th
 
 For those of you who want a quicker start instead, it goes something like this:
 
-- Create new project with composer: `composer create-project withfatpanda/ship "path/to/your/project"`
-- Install dependencies: `npm install`
-- Start your watcher (build in the background while you edit your code): `npm build watch`
+- Install [Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx) and [NPM](https://www.npmjs.com/get-npm)
+- Create a new Ship project (your theme) with composer: `composer create-project withfatpanda/ship "path/to/your/project"`
+- Install front-end dependencies: `npm install`
+- Start your watcher (builds your front-end in the background as you edit your code): `npm build watch`
 - Put your theme's scripts into `src/js/theme.js` 
 - Build [Customizer](https://codex.wordpress.org/Theme_Customization_API) features in `src/js/customizer.js` 
 - Style your theme in `src/sass/theme/_theme.scss`
@@ -56,7 +57,7 @@ For those of you who want a quicker start instead, it goes something like this:
 ### Installing Dependencies
 All of Ship's JS and CSS is built upon a core set of dependencies, chief among them being Bootstrap. 
 
-Your new build system Laravel Mix also loads as a dependency. 
+Your new build system, Laravel Mix, also loads as a dependency. 
 
 All of these dependencies are managed through [NPM](https://www.npmjs.com). If you don't have NPM installed, you'll need to [do that first](https://www.npmjs.com/get-npm).
 
