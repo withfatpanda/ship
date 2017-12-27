@@ -40,7 +40,18 @@ You'll need to have [Composer](https://getcomposer.org/) installed.
 3. Answer the on-screen questions
 
 ## Development
-Ship wants your workflow to be as painless as possible. Below we move quickly through several topics that might be new to you: *Dependency Management*, *Builds*, and *Asset Loading*. 
+Ship wants your workflow to be as painless as possible. Below we move quickly through several topics that might be new to you, among them *Dependency Management*, *Builds*, and *Asset Loading*. 
+
+For those of you who want a quicker start instead, it goes something like this:
+
+- Create new project with composer: `composer create-project withfatpanda/ship "path/to/your/project"'
+- Install dependencies: `npm install`
+- Start your watcher (build in the background while you edit your code): `npm build watch`
+- Put your main JavaScript into `src/js/theme.js` 
+- Build Customizer features into `src/js/customizer.js` 
+- Style your theme in `src/sass/theme/_theme.scss`
+- Style the content in the admin editors in `src/sass/custom-editor-style.scss`
+- Finish dev, test, distribute
 
 ### Installing Dependencies
 All of Ship's JS and CSS is built upon a core set of dependencies, chief among them being Bootstrap. Laravel Mix—your build system—also loads as a dependency. All of this is handled by [NPM](https://www.npmjs.com), so if you don't have NPM installed, you'll need to [do that first](https://www.npmjs.com/get-npm).
