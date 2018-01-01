@@ -11,9 +11,9 @@
 require get_template_directory() . '/src/php/inc/assets.php';
 
 /**
- * Blade template functionality.
+ * Load the Blade template engine.
  */
-require get_template_directory() . '/src/php/inc/blade.php';
+\FatPanda\WordPress\Ship\Blade::load();
 
 /**
  * Custom functions that act independently of the theme templates.
