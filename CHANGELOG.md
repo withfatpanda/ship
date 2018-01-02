@@ -3,8 +3,8 @@
 ## 1.0.3 December 26, 2017
 - Flushed the old gulpfile.js; no need to hang onto that relic
 - Created withfatpanda/ship-lib and offloaded framework stuff and stubs there
-- Added template publishing step to project creation script
-- Choose from php or blade baseline
+- During project setup, choose from PHP or Blade baseline templates
+- During project setup, choose from "complete" or "simple" template hierarchy
 
 ## 1.0.2 December 25, 2017
 - Hide site-info crap by default

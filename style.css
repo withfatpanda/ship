@@ -3,8 +3,8 @@ Theme Name: Ship
 Theme URI: https://github.com/collegeman/ship
 Author: Fat Panda, LLC
 Author URI: https://www.withfatpanda.com
-Description: A WordPress Theme Framework based on UnderStrap (Underscores + Bootstrap)
-Version: 1.0.2
+Description: A WordPress Starter Theme
+Version: 1.0.3
 License: GPL-2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: understrap
@@ -14,6 +14,7 @@ This theme, like WordPress, is licensed under the GPL.
 This theme is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 
 Resource Licenses:
+Sage: https://github.com/roots/sage (MIT)
 Understrap: https://understrap.github.io/#license (GPL-2.0)
 Font Awesome: http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
 Bootstrap: http://getbootstrap.com | https://github.com/twbs/bootstrap/blob/master/LICENSE (Code licensed under MIT, documentation under CC BY 3.0.)
