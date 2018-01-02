@@ -70,7 +70,12 @@ function understrap_entry_footer() {
 endif;
 
 if ( ! function_exists('display_sidebar') ) :
-
+/**
+ * An understrap feature: provides an API to reading a customizer
+ * feature for configuring the sidebar (left, right, both, or none)
+ * @param  String $which left, right, both, or none, or null, in which case the active value is returned
+ * @return mixed String or boolean
+ */
 function display_sidebar($which = null) {
 	$sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
@@ -90,6 +95,24 @@ function display_sidebar($which = null) {
 		} else {
 			return $which === $sidebar_pos;
 		}
+	}
+}
+endif;
+
+if ( ! function_exists('container_type') ) :
+/**
+ * An understrap feature: provides an API to reading a customizer
+ * feature for configuring the bootstrap container type for the page.
+ * @param  String $which Test value to compare to the feature, or null, in which case the active value is returned
+ * @return mixed String or boolean
+ */
+function container_type($which = null) {
+	$container_type = get_theme_mod( 'understrap_container_type' );
+
+	if (!is_null($which)) {
+		return $which === $container_type;
+	} else {
+		return $container_type ?: 'container';
 	}
 }
 endif;
