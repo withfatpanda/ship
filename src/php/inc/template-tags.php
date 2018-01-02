@@ -69,6 +69,31 @@ function understrap_entry_footer() {
 }
 endif;
 
+if ( ! function_exists('display_sidebar') ) :
+
+function display_sidebar($which = null) {
+	$sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
+
+	if (is_null($which)) {
+		if ($sidebar_pos !== 'none') {
+			return $sidebar_pos;
+		} else {
+			return false;
+		}
+	} else {
+		if ('both' === $sidebar_pos) {
+			if ($which === 'both' || $which === 'left' || $which === 'right') {
+				return $sidebar_pos;
+			} else {
+				return false;
+			}
+		} else {
+			return $which === $sidebar_pos;
+		}
+	}
+}
+endif;
+
 /**
  * Returns true if a blog has more than 1 category.
  *

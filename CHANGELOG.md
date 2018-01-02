@@ -1,8 +1,10 @@
 # Ship change history
 
 ## 1.0.3 December 26, 2017
-- Flush the old gulpfile.js; no need to hang onto that relic
-- 
+- Flushed the old gulpfile.js; no need to hang onto that relic
+- Created withfatpanda/ship-lib and offloaded framework stuff and stubs there
+- Added template publishing step to project creation script
+- Choose from php or blade baseline
 
 ## 1.0.2 December 25, 2017
 - Hide site-info crap by default
