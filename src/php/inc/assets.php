@@ -15,12 +15,12 @@ if ( ! function_exists('asset') ) {
 
     static $manifest;
 
-    if (empty($manifest)) {
+    if (is_null($manifest)) {
+      $manifest = [];
       $manifestPath = get_stylesheet_directory() . DIRECTORY_SEPARATOR . trim($publicPath, '/') . DIRECTORY_SEPARATOR . ltrim($manifestName, '/');
-      $manifestContent = file_get_contents($manifestPath);
-      $manifest = (array) json_decode($manifestContent);
-      if (!$manifest) {
-        throw new \Exception("Manifest is missing or corrupt");
+      if (file_exists($manifestPath)) {
+        $manifestContent = file_get_contents($manifestPath);
+        $manifest = (array) json_decode($manifestContent);
       }
     }
 

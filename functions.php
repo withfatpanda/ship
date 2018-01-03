@@ -68,6 +68,11 @@ require get_template_directory() . '/src/php/inc/custom-comments.php';
 require get_template_directory() . '/src/php/inc/jetpack.php';
 
 /**
+ * Load custom WordPress nav walker.
+ */
+require get_template_directory() . '/src/php/inc/bootstrap-wp-navwalker.php';
+
+/**
  * Load WooCommerce functions.
  */
 require get_template_directory() . '/src/php/inc/woocommerce.php';

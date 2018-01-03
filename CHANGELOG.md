@@ -1,5 +1,8 @@
 # Ship change history
 
+## 1.0.6 January 2, 2018
+- Fix bug in the way I was loading WP_Bootstrap_Navwalker (can't be loaded by composer)
+
 ## 1.0.5 January 2, 2018
 - Now ignoring composer.lock (versioning this is not compatible with my use of studio for local package integration)
 - This project's composer.json is now the authoritive source on default theme version during setup
