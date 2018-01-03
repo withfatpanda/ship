@@ -1,5 +1,8 @@
 # Ship change history
 
+## 1.0.4 January 2, 2018
+- Updated composer.lock
+
 ## 1.0.3 December 26, 2017
 - Flushed the old gulpfile.js; no need to hang onto that relic
 - Created withfatpanda/ship-lib and offloaded framework stuff and stubs there

@@ -16,7 +16,7 @@ We called it "Ship" because it helps us ship great web experiences, faster. That
 - Contact Form 7 support
 - Translation ready
 
-## Other features, in the works:
+## Other features, in progress:
 - Algolia ready: real-time search for admins and visitors
 - [Vue.js](https://vuejs.org/) for building themes as [Single-Page Applications](https://en.wikipedia.org/wiki/Single-page_application)
 - A theme builder framework based on [Advanced Custom Fields](https://www.advancedcustomfields.com)
