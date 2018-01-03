@@ -1,5 +1,9 @@
 # Ship change history
 
+## 1.0.5 January 2, 2018
+- Now ignoring composer.lock (versioning this is not compatible with my use of studio for local package integration)
+- This project's composer.json is now the authoritive source on default theme version during setup
+
 ## 1.0.4 January 2, 2018
 - Updated composer.lock
 
