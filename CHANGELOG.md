@@ -1,29 +1,34 @@
 # Ship change history
 
-## 1.0.6 January 2, 2018
+## 1.0.7: 2018-01-05
+- Added ES linter to JavaScript builds
+- Added a JS component and a Sass module for loading slideout (drawer-style nav menus)
+
+## 1.0.6: 2018-01-02
 - Fix bug in the way I was loading WP_Bootstrap_Navwalker (can't be loaded by composer)
 
-## 1.0.5 January 2, 2018
+## 1.0.5: 2018-01-02
 - Now ignoring composer.lock (versioning this is not compatible with my use of studio for local package integration)
 - This project's composer.json is now the authoritive source on default theme version during setup
 
-## 1.0.4 January 2, 2018
+## 1.0.4: 2018-01-02
 - Updated composer.lock
 
-## 1.0.3 December 26, 2017
+## 1.0.3: 2017-12-26
 - Flushed the old gulpfile.js; no need to hang onto that relic
 - Created withfatpanda/ship-lib and offloaded framework stuff and stubs there
 - During project setup, choose from PHP or Blade baseline templates
 - During project setup, choose from "complete" or "simple" template hierarchy
 
-## 1.0.2 December 25, 2017
+## 1.0.2: 2017-12-25
 - Hide site-info crap by default
 - Add Illuminate\Support library, for a little bit of sugar
 
-## 1.0.1 December 25, 2017
+## 1.0.1: 2017-12-25
 - Hot fix project setup script to properly populate package.json project name field
 
-## 1.0.0 December 24, 2017 - first release of Ship
+## 1.0.0: 2017-12-24 
+- first release of Ship
 
 ---
 

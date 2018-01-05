@@ -5,12 +5,17 @@ load a couple of things that shipped with underscores, and then
 we load the functionality specific to this theme.
 */
 
-require('./underscores/navigation')
-require('./underscores/skip-link-focus-fix')
+import $ from 'jquery'
+import './underscores/navigation'
+import './underscores/skip-link-focus-fix'
+import Popper from 'popper.js'
+import 'bootstrap'
+import './components/track-window-scroll-events'
+// import './components/collapsibles'
+// import './components/slideout'
 
-window.Popper = require('popper.js')
-require('bootstrap')
+window.jQuery = window.$ = $
+window.Popper = Popper
 
 // To load a Vue instance and attach it to #page, uncomment the following line:
-
-//require('./vue-wordpress').init()
+// require('./vue-wordpress').init()
